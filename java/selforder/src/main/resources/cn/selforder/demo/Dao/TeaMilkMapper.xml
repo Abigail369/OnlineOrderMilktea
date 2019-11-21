@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.selforder.demo.Dao.TeaMilkMapper">
+
+    <resultMap id="result" type="cn.selforder.demo.order.TeaWithMilk">
+        <result property="teaId" column="teaId" />
+        <result property="TeaName" column="TeaName" />
+        <result property="Attribute" column="Attribute" />
+        <result property="Photo" column="Photo" />
+        <result property="CupType" column="CupType" />
+        <result property="Discount" column="Discount" />
+        <result property="Price" column="Price" />
+    </resultMap>
+
+    <select id="init" resultMap="result">
+        select Teaid,teaname,Attribute,Photo,CupType,Discount,Price from teawithmilk
+    </select>
+
+    <select id="selectallattribute" resultType="java.lang.String">
+        SELECT Attribute FROM teawithmilk GROUP BY Attribute
+    </select>
+
+    <select id="selectmilkByattribute" resultType="cn.selforder.demo.order.TeaWithMilk">
+        select * from teawithmilk where attribute = #{attribute}
+    </select>
+
+    <select id="selectmilkByDis" resultType="cn.selforder.demo.order.TeaWithMilk">
+        select * from teawithmilk where discount = #{discount}
+    </select>
+
+    <select id="selectCharge" resultType="cn.selforder.demo.order.Charge">
+        select * from charge
+    </select>
+
+
+    <insert id="addmilk" parameterType="cn.selforder.demo.order.TeaWithMilk" keyProperty="teaId" useGeneratedKeys="true">
+        INSERT INTO teawithmilk
+        (TeaID,TeaName,Attribute,Photo,CupType,Discount,Price)
+        values (
+            #{TeaID},#{TeaName},#{Attribute},#{Photo},#{CupType},#{Discount},#{Price}
+        )
+    </insert>
+
+
+</mapper>

@@ -1,0 +1,55 @@
+Manifest-Version: 1.0
+Class-Path: jakarta.xml.bind-api-2.3.2.jar junit-vintage-engine-5.5.2.
+ jar spring-boot-test-2.2.1.RELEASE.jar junit-jupiter-api-5.5.2.jar lo
+ gback-classic-1.2.3.jar spring-expression-5.2.1.RELEASE.jar hibernate
+ -core-5.4.8.Final.jar jsonassert-1.5.0.jar byte-buddy-1.10.2.jar spri
+ ng-boot-starter-2.2.1.RELEASE.jar jackson-datatype-jdk8-2.10.0.jar as
+ m-5.0.4.jar mockito-junit-jupiter-3.1.0.jar spring-web-5.2.1.RELEASE.
+ jar junit-jupiter-5.5.2.jar spring-boot-2.2.1.RELEASE.jar springfox-s
+ wagger-common-2.7.0.jar tomcat-embed-websocket-9.0.27.jar jakarta.val
+ idation-api-2.0.1.jar junit-platform-commons-1.5.2.jar mybatis-spring
+ -boot-autoconfigure-1.3.1.jar mybatis-3.4.5.jar log4j-to-slf4j-2.12.1
+ .jar mapstruct-1.1.0.Final.jar junit-platform-engine-1.5.2.jar spring
+ -boot-autoconfigure-2.2.1.RELEASE.jar spring-jcl-5.2.1.RELEASE.jar ja
+ karta.persistence-api-2.2.3.jar spring-boot-starter-jdbc-2.2.1.RELEAS
+ E.jar spring-aop-5.2.1.RELEASE.jar springfox-spring-web-2.7.0.jar jso
+ n-path-2.4.0.jar HikariCP-3.4.1.jar mybatis-spring-1.3.1.jar spring-d
+ ata-jpa-2.2.1.RELEASE.jar spring-boot-starter-test-2.2.1.RELEASE.jar 
+ xmlunit-core-2.6.3.jar fastjson-1.2.30.jar accessors-smart-1.2.jar ju
+ nit-jupiter-engine-5.5.2.jar spring-plugin-core-1.2.0.RELEASE.jar spr
+ ing-boot-test-autoconfigure-2.2.1.RELEASE.jar spring-boot-starter-tom
+ cat-2.2.1.RELEASE.jar dom4j-2.1.1.jar hibernate-validator-6.0.18.Fina
+ l.jar jackson-module-parameter-names-2.10.0.jar jakarta.transaction-a
+ pi-1.3.3.jar spring-tx-5.2.1.RELEASE.jar jakarta.annotation-api-1.3.5
+ .jar jboss-logging-3.4.1.Final.jar jakarta.activation-api-1.2.1.jar b
+ yte-buddy-agent-1.10.2.jar okio-1.13.0.jar springfox-swagger2-2.7.0.j
+ ar spring-data-commons-2.2.1.RELEASE.jar logback-core-1.2.3.jar mybat
+ is-spring-boot-starter-1.3.1.jar commons-lang3-3.9.jar reflections-0.
+ 9.11.jar pagehelper-5.1.3.jar guava-18.0.jar spring-boot-starter-web-
+ 2.2.1.RELEASE.jar jackson-databind-2.10.0.jar okhttp-3.9.1.jar druid-
+ 1.1.10.jar spring-boot-starter-logging-2.2.1.RELEASE.jar commons-io-2
+ .6.jar druid-spring-boot-starter-1.1.10.jar aspectjweaver-1.9.4.jar j
+ sqlparser-1.0.jar jackson-core-2.10.0.jar spring-test-5.2.1.RELEASE.j
+ ar stax-ex-1.8.1.jar springfox-schema-2.7.0.jar jandex-2.0.5.Final.ja
+ r mysql-connector-java-8.0.11.jar jackson-annotations-2.10.0.jar spri
+ ng-webmvc-5.2.1.RELEASE.jar junit-4.12.jar springfox-swagger-ui-2.7.0
+ .jar json-smart-2.3.jar swagger-annotations-1.5.13.jar istack-commons
+ -runtime-3.0.8.jar spring-boot-starter-json-2.2.1.RELEASE.jar classma
+ te-1.5.1.jar mockito-core-3.1.0.jar spring-context-5.2.1.RELEASE.jar 
+ txw2-2.3.2.jar objenesis-2.6.jar snakeyaml-1.25.jar javassist-3.24.0-
+ GA.jar hamcrest-2.1.jar pagehelper-spring-boot-autoconfigure-1.2.4.ja
+ r FastInfoset-1.2.16.jar android-json-0.0.20131108.vaadin1.jar spring
+ -boot-starter-aop-2.2.1.RELEASE.jar spring-orm-5.2.1.RELEASE.jar swag
+ ger-models-1.5.13.jar hibernate-commons-annotations-5.1.0.Final.jar s
+ pring-jdbc-5.2.1.RELEASE.jar spring-boot-starter-validation-2.2.1.REL
+ EASE.jar spring-plugin-metadata-1.2.0.RELEASE.jar log4j-api-2.12.1.ja
+ r pagehelper-spring-boot-starter-1.2.4.jar jaxb-runtime-2.3.2.jar ant
+ lr-2.7.7.jar opentest4j-1.2.0.jar junit-jupiter-params-5.5.2.jar spri
+ ng-core-5.2.1.RELEASE.jar apiguardian-api-1.1.0.jar lombok-1.18.10.ja
+ r assertj-core-3.13.2.jar springfox-spi-2.7.0.jar spring-beans-5.2.1.
+ RELEASE.jar spring-aspects-5.2.1.RELEASE.jar tomcat-embed-el-9.0.27.j
+ ar tomcat-embed-core-9.0.27.jar spring-boot-starter-data-jpa-2.2.1.RE
+ LEASE.jar slf4j-api-1.7.29.jar jul-to-slf4j-1.7.29.jar springfox-core
+ -2.7.0.jar jackson-datatype-jsr310-2.10.0.jar
+Main-Class: cn.selforder.demo.AppApplication
+

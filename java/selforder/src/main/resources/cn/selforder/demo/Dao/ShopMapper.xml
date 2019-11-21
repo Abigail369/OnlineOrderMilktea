@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.selforder.demo.Dao.ShopMapper">
+
+    <resultMap id="result" type="cn.selforder.demo.order.allorder">
+        <id property="OrderId" column="One_OrderId" />
+        <result property="WaiterId" column="WaiterId" />
+        <result property="UserId" column="UserId" />
+        <result property="Time" column="Time" />
+        <result property="Status" column="Status" />
+        <result property="EndTime" column="EndTime" />
+        <result property="allprice" column="allprice" />
+        <collection property="auxxes" ofType="cn.selforder.demo.order.Auxx">
+            <result property="TeaName" column="TeaName" />
+            <result property="CupType" column="CupType" />
+            <result property="Number" column="Number" />
+            <result property="Charge" column="Charge" />
+            <result property="Temperature" column="Temperature" />
+            <result property="Sugar" column="Sugar" />
+            <result property="Price" column="Price" />
+        </collection>
+    </resultMap>
+
+    <select id="findorder" resultMap="result">
+            SELECT a.orderid One_OrderId,a.waiterid,a.UserId,a.time,a.status,a.endtime,a.allprice,
+            c.TeaName,c.CupType,b.Number,b.Charge,b.Temperature,b.Sugar,b.Price
+    FROM ordersmaster a,auxiliary b,teawithmilk c WHERE a.OrderId = b.OrderId AND a.userid = #{userid} AND c.TeaID = b.TeaId
+    </select>
+
+    <select id="findall" resultMap="result">
+            SELECT a.orderid One_OrderId,a.waiterid,a.UserId,a.time,a.status,a.endtime,a.allprice,
+            c.TeaName,c.CupType,b.Number,b.Charge,b.Temperature,b.Sugar,b.Price
+    FROM ordersmaster a,auxiliary b,teawithmilk c WHERE a.OrderId = b.OrderId AND c.TeaID = b.TeaId
+    </select>
+
+    <select id="findfail" resultMap="result">
+            SELECT a.orderid One_OrderId,a.waiterid,a.UserId,a.time,a.status,a.endtime,a.allprice,
+            c.TeaName,c.CupType,b.Number,b.Charge,b.Temperature,b.Sugar,b.Price
+    FROM ordersmaster a,auxiliary b,teawithmilk c WHERE a.OrderId = b.OrderId AND c.TeaID = b.TeaId AND a.status = '未完成'
+
+    </select>
+
+    <select id="findsucc" resultMap="result">
+            SELECT a.orderid One_OrderId,a.waiterid,a.UserId,a.time,a.status,a.endtime,a.allprice,
+            c.TeaName,c.CupType,b.Number,b.Charge,b.Temperature,b.Sugar,b.Price
+    FROM ordersmaster a,auxiliary b,teawithmilk c WHERE a.OrderId = b.OrderId AND c.TeaID = b.TeaId AND a.status = '完成'
+
+    </select>
+
+</mapper>
